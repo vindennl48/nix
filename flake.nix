@@ -7,7 +7,7 @@
 
   outputs = { self, nixpkgs }:
   {
-    nixosConfigurations.nixos-hp = nixpkgs.lib.nixosSystem {
+    nixosConfigurations.nix-hp-8440p = nixpkgs.lib.nixosSystem {
       modules = [
         ./hosts/hp-8440p/configuration.nix
       ];

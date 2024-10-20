@@ -10,25 +10,10 @@
       ./hardware-configuration.nix
       ./../../basic-config.nix
       ./../../audio.nix
-      ./../../gui-environment.nix
-      ./../../networking.nix
+      ./../../boot-dos.nix
+      ./../../cinnamon-environment.nix
     ];
 
   networking.hostName = "nix-hp-8440p"; # has to be included
-
-  # basic-config
-  isHeadless.enable = false;
-  isBootDos.enable = true;
-
-  # audio
-  reaper.enable = false;
-  carla.enable = false;
-
-  # GUI
-  plasma.enable = false;
-  cinnamon.enable = false;
-
-  # Networking
-  networking.enable = false; # set to false if using cinnamon GUI
 }
 
