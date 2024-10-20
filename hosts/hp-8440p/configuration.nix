@@ -14,6 +14,12 @@
       ./../../cinnamon-environment.nix
     ];
 
+  ## HOST NAME ##
   networking.hostName = "nix-hp-8440p"; # has to be included
+
+  ## HOST SPECIFIC PROGRAMS ##
+  environment.systemPackages = with pkgs; [
+    home-manager
+  ];
 }
 
