@@ -7,6 +7,7 @@
 {
   ## PROGRAMS ##
   environment.systemPackages = with pkgs; [
+    vim
     neovim
     wget
     git
@@ -47,7 +48,7 @@
   # services.libinput.enable = true;
 
   # DO NOT TOUCH
-  nix.settings.experimental-features = [ "flakes" ];
+  nix.settings.experimental-features = [ "nix-command" "flakes" ];
   nixpkgs.config.allowUnfree = true; # allow packages that cost money
   system.stateVersion = "24.05";
 }

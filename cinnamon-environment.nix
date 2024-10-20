@@ -16,5 +16,7 @@
 
   services.xserver.displayManager.gdm.enable = true;
   services.xserver.desktopManager.cinnamon.enable = true;
+
+  programs.firefox.enable = true;
 }
 
