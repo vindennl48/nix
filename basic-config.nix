@@ -21,6 +21,11 @@
   programs.zsh.enable = true;
   # programs.firefox.enable = true; # set this in the GUI module
 
+  ## FONTS ##
+  fonts.packages = with pkgs; [
+    (nerdfonts.override { fonts = [ "RobotoMono" "FiraCode" "DroidSansMono" ]; })
+  ];
+
   ## USERS ##
   # Define a user account. Don't forget to set a password with ‘passwd’.
   users.users.mitch = {
@@ -43,6 +48,15 @@
 
   # Select internationalisation properties.
   i18n.defaultLocale = "en_US.UTF-8";
+  i18n.extraLocaleSettings.LC_ADDRESS = "en_US.UTF-8";
+  i18n.extraLocaleSettings.LC_IDENTIFICATION = "en_US.UTF-8";
+  i18n.extraLocaleSettings.LC_MEASUREMENT = "en_US.UTF-8";
+  i18n.extraLocaleSettings.LC_MONETARY = "en_US.UTF-8";
+  i18n.extraLocaleSettings.LC_NAME = "en_US.UTF-8";
+  i18n.extraLocaleSettings.LC_NUMERIC = "en_US.UTF-8";
+  i18n.extraLocaleSettings.LC_PAPER = "en_US.UTF-8";
+  i18n.extraLocaleSettings.LC_TELEPHONE = "en_US.UTF-8";
+  i18n.extraLocaleSettings.LC_TIME = "en_US.UTF-8";
   # console.font = "Lat2-Terminus16";
   # console.keyMap = "us";
   # console.useXkbConfig = true; # use xkb.options in tty.
