@@ -7,23 +7,28 @@
 {
   ## PROGRAMS ##
   environment.systemPackages = with pkgs; [
-    home-manager
-    vim
-    neovim
+    # home-manager
+    # vim
+    neovim gcc nodejs yarn xclip
+    htop
+    fzf
+    alacritty
     wget
     git
     nh # helper for shortening nix commands
     nvd # helper for comparing nix versions and building new ones
   ];
+  programs.zsh.enable = true;
   # programs.firefox.enable = true; # set this in the GUI module
 
   ## USERS ##
   # Define a user account. Don't forget to set a password with ‘passwd’.
   users.users.mitch = {
     isNormalUser = true;
-    extraGroups = [ "wheel" ]; # Enable ‘sudo’ for the user.
+    extraGroups = [ "networkmanager" "wheel" ]; # Enable ‘sudo’ for the user.
     packages = with pkgs; [
     ];
+    shell = pkgs.zsh;
   };
 
   ## SYSTEMD SERVICES ##
