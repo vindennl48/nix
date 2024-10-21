@@ -9,10 +9,6 @@
   services.xserver.enable = true;
   services.xserver.xkb.layout = "us";
   services.xserver.xkb.variant = "";
-  
-  # Configure keymap in X11
-  # services.xserver.xkb.layout = "us";
-  # services.xserver.xkb.options = "eurosign:e,caps:escape";
 
   services.xserver.displayManager.sddm.enable = true;
   services.xserver.desktopManager.plasma6.enable = true;

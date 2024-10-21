@@ -9,9 +9,13 @@
   services.xserver.enable = true;
   services.xserver.xkb.layout = "us";
   services.xserver.xkb.variant = "";
+  # services.xserver.displayManager.startx.enable = true;
   
   services.xserver.displayManager.gdm.enable = true;
-  services.xserver.desktopManager.cinnamon.enable = true;
+  services.xserver.windowManager.dwm.enable = true;
+  services.xserver.windowManager.dwm.package = pkgs.dwm.overrideAttrs {
+    src = ~/.config/suck/dwm;
+  };
 
   programs.firefox.enable = true;
 }

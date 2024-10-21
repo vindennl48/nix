@@ -14,11 +14,12 @@
   # option 1:
   # Make sure to create the /etc/wpa_supplicant.conf file for the wifi network
   # example: wpa_passphrase <wifi name> <wifi password> > /etc/wpa_supplicant.conf
-  # networking.wireless.enable = true;  # Enables wireless support via wpa_supplicant.
+  networking.wireless.enable = true;  # Enables wireless support via wpa_supplicant.
 
   # option 2:
   # This option needs to be turned off if we are using cinnamon; it uses its own thing
-  networking.networkmanager.enable = true;  # Easiest to use and most distros use this by default.
+  # should be used for plasma
+  # networking.networkmanager.enable = true;  # Easiest to use and most distros use this by default.
 
   # Configure network proxy if necessary
   # networking.proxy.default = "http://user:password@proxy:port/";
