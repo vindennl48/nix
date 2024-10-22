@@ -12,6 +12,7 @@
   
   services.xserver.displayManager.gdm.enable = true;
   services.xserver.desktopManager.cinnamon.enable = true;
+  services.xrdp.defaultWindowManager = "cinnamon"; # in case we want remote desktop
 
   programs.firefox.enable = true;
 }

@@ -12,6 +12,7 @@
 
   services.xserver.displayManager.sddm.enable = true;
   services.xserver.desktopManager.plasma6.enable = true;
+  services.xrdp.defaultWindowManager = "startplasma-x11"; # in case we want remote desktop
 
   programs.firefox.enable = true;
 }
