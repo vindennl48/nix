@@ -1,15 +1,16 @@
-#!/usr/bin/env nix-shell
-#! nix-shell --option extra-experimental-features nix-command flakes
+# these shebangs are here for reference, do not activate
+# /usr/bin/env nix-shell
+#  nix-shell --option extra-experimental-features nix-command flakes
 
 { pkgs ? import <nixpkgs> {} }:
 
 pkgs.mkShell {
 
-  packages = [
-    pkgs.git
-    pkgs.vim
-    pkgs.wget
-  ];
+  # packages = [
+  #   pkgs.git
+  #   pkgs.vim
+  #   pkgs.wget
+  # ];
 
   shellHook = ''
     echo "Lets Setup NixOS!"
@@ -35,6 +36,4 @@ pkgs.mkShell {
     echo "    Run nixos-install when ready"
     echo "    Then: nixos-enter --root /mnt -c '<user>' :to set new user password"
   '';
-
-  # nix.settings.experimental-features = [ "nix-command" "flakes" ];
 }
