@@ -8,12 +8,14 @@
   imports =
     [ # Include the results of the hardware scan.
       ./hardware-configuration.nix
-      ./../../basic-config.nix
-      ./../../audio.nix
-      ./../../boot-dos.nix
-      # ./../../networkManager.nix
-      ./../../cinnamon-environment.nix
+      ./../../modules/audio.nix
+      ./../../modules/basic-config.nix
+      ./../../modules/boot-dos.nix
+      ./../../modules/cinnamon-environment.nix
       # ./../../dwm-environment.nix
+      # ./../../modules/networkManager.nix
+      # ./../../modules/plasma-environment.nix
+      # ./../../modules/remoteDesktop.nix
     ];
 
   ## HOST NAME ##
