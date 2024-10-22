@@ -12,5 +12,11 @@
         ./hosts/hp-8440p/configuration.nix
       ];
     };
+
+    nixosConfigurations.nix-vm1 = nixpkgs.lib.nixosSystem {
+      modules = [
+        ./hosts/nix-vm1/configuration.nix
+      ];
+    };
   };
 }
