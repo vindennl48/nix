@@ -18,5 +18,11 @@
         ./hosts/nix-vm1/configuration.nix
       ];
     };
+
+    nixosConfigurations.nixhyper = nixpkgs.lib.nixosSystem {
+      modules = [
+        ./hosts/nixhyper/configuration.nix
+      ];
+    };
   };
 }

@@ -14,8 +14,11 @@
       ./../../modules/cinnamon-environment.nix
       # ./../../dwm-environment.nix
       # ./../../modules/networkManager.nix
+      # ./../../modules/openssh.nix
       # ./../../modules/plasma-environment.nix
       ./../../modules/remoteDesktop.nix
+      ./../../modules/user-mitch.nix
+      # ./../../modules/user-nixhyper.nix
     ];
 
   ## HOST NAME ##
@@ -25,11 +28,4 @@
   environment.systemPackages = with pkgs; [
     home-manager
   ];
-
-  # # trying to activate x11 serivces
-  # services.xserver.enable = true;
-  # services.xserver.xkb.layout = "us";
-  # services.xserver.xkb.variant = "";
-  # services.xserver.displayManager.startx.enable = true;
 }
-

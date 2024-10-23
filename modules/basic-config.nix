@@ -7,14 +7,15 @@
 {
   ## PROGRAMS ##
   environment.systemPackages = with pkgs; [
-    # home-manager
-    # vim
+    vim
     neovim gcc nodejs yarn xclip
     htop
     fzf
     alacritty
+    vlc
     wget
     git
+    less
     nh # helper for shortening nix commands
     nvd # helper for comparing nix versions and building new ones
   ];
@@ -25,16 +26,6 @@
   fonts.packages = with pkgs; [
     (nerdfonts.override { fonts = [ "RobotoMono" "FiraCode" "DroidSansMono" ]; })
   ];
-
-  ## USERS ##
-  # Define a user account. Don't forget to set a password with ‘passwd’.
-  users.users.mitch = {
-    isNormalUser = true;
-    extraGroups = [ "networkmanager" "wheel" ]; # Enable ‘sudo’ for the user.
-    packages = with pkgs; [
-    ];
-    shell = pkgs.zsh;
-  };
 
   ## SYSTEMD SERVICES ##
   systemd.targets.sleep.enable = false;

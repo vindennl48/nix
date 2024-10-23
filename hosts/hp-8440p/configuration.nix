@@ -13,6 +13,19 @@
       ./../../modules/boot-dos.nix
       ./../../modules/cinnamon-environment.nix
       # ./../../dwm-environment.nix
+      # ./../../modules/networkManager.nix # dont need with cinnamon
+      # ./../../modules/openssh.nix
+      # ./../../modules/plasma-environment.nix
+      # ./../../modules/remoteDesktop.nix
+      ./../../modules/user-mitch.nix
+      # ./../../modules/user-nixhyper.nix
+
+      ./hardware-configuration.nix
+      ./../../modules/audio.nix
+      ./../../modules/basic-config.nix
+      ./../../modules/boot-dos.nix
+      ./../../modules/cinnamon-environment.nix
+      # ./../../dwm-environment.nix
       # ./../../modules/networkManager.nix
       # ./../../modules/plasma-environment.nix
       # ./../../modules/remoteDesktop.nix
@@ -25,11 +38,4 @@
   environment.systemPackages = with pkgs; [
     home-manager
   ];
-
-  # # trying to activate x11 serivces
-  # services.xserver.enable = true;
-  # services.xserver.xkb.layout = "us";
-  # services.xserver.xkb.variant = "";
-  # services.xserver.displayManager.startx.enable = true;
 }
-

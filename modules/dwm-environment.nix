@@ -9,6 +9,7 @@
   services.xserver.enable = true;
   services.xserver.xkb.layout = "us";
   services.xserver.xkb.variant = "";
+  ## This is to start at CLI prompt instead of going to login screen
   # services.xserver.displayManager.startx.enable = true;
   
   services.xserver.displayManager.gdm.enable = true;
