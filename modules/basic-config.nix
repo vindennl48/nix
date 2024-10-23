@@ -7,12 +7,11 @@
 {
   ## PROGRAMS ##
   environment.systemPackages = with pkgs; [
+    ## Only set basic programs here to run the OS, custom programs that require
+    ## dotfiles should go in home-manager
+    # home-manager # set this in the configuration.nix file for your host
     vim
-    neovim gcc nodejs yarn xclip
     htop
-    fzf
-    alacritty
-    vlc
     wget
     git
     less
