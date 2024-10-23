@@ -15,6 +15,7 @@
     wget
     git
     less
+    tree
     nh # helper for shortening nix commands
     nvd # helper for comparing nix versions and building new ones
   ];
