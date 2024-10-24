@@ -39,11 +39,11 @@
 
   ## libvirt and virt-manager
   # programs.virt-manager.enable = true; # Install virt-manager
-  virtualization.libvirtd.enable = true;
-  virtualization.libvirtd.qemu.swtpm.enable = true;
-  virtualization.libvirtd.qemu.ovmf.enable = true;
-  virtualization.libvirtd.qemu.ovmf.packages = [ pkgs.OVMFFull.fd ];
-  virtualization.spiceUSBRedirection.enable = true;
+  virtualisation.libvirtd.enable = true;
+  virtualisation.libvirtd.qemu.swtpm.enable = true;
+  virtualisation.libvirtd.qemu.ovmf.enable = true;
+  virtualisation.libvirtd.qemu.ovmf.packages = [ pkgs.OVMFFull.fd ];
+  virtualisation.spiceUSBRedirection.enable = true;
   services.spice-vdagentd.enable = true;
 
   # shim for looking-glass to work
