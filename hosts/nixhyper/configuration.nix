@@ -49,6 +49,7 @@
   # shim for looking-glass to work
   systemd.tmpfiles.rules = [
     "f /dev/shm/looking-glass 0660 nixhyper qemu-libvirtd -"
+    "f /dev/shm/looking-glass 0660 nixhyper kvm -"
   ];
 
   # Network Bridge Setup
