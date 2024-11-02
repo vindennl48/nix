@@ -18,6 +18,7 @@
     tree
     nh # helper for shortening nix commands
     nvd # helper for comparing nix versions and building new ones
+    lua-language-server
   ];
   programs.zsh.enable = true;
   # programs.firefox.enable = true; # set this in the GUI module
