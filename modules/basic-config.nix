@@ -24,9 +24,10 @@
   # programs.firefox.enable = true; # set this in the GUI module
 
   ## FONTS ##
-  fonts.packages = with pkgs; [
-    (nerdfonts.override { fonts = [ "RobotoMono" "FiraCode" "DroidSansMono" ]; })
-  ];
+  # moved to home-manager
+  # fonts.packages = with pkgs; [
+  #   (nerdfonts.override { fonts = [ "RobotoMono" "FiraCode" "DroidSansMono" ]; })
+  # ];
 
   ## SYSTEMD SERVICES ##
   systemd.targets.sleep.enable = false;
