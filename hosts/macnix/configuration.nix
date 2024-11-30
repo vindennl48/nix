@@ -34,6 +34,7 @@
     alacritty
     htop
     wget
+    bat
     less
     tree
     lua-language-server
