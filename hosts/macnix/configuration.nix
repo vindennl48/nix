@@ -40,6 +40,7 @@
     lua-language-server
     spotify
     stats # mac status bar for cpu and ram, etc.
+    ffmpeg
     nh # nix command helper
   ];
 
