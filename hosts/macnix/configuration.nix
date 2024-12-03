@@ -41,6 +41,7 @@
     spotify
     stats # mac status bar for cpu and ram, etc.
     ffmpeg
+    google-chrome
     nh # nix command helper
   ];
 
