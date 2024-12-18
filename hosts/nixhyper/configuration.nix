@@ -87,6 +87,11 @@
   networking.networkmanager.unmanaged = [ "br0" ];
   networking.firewall.allowedTCPPorts = [ 22 8000 5901 ];
 
+  # Additional Hardware Setup
+  hardware.bluetooth.enable = true;
+  hardware.bluetooth.powerOnBoot = true;
+  services.blueman.enable = true; # bluetooth GUI
+
   # Bootloader
   boot.loader.systemd-boot.enable = true;
   boot.loader.efi.canTouchEfiVariables = true;
