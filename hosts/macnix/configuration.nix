@@ -53,6 +53,8 @@
       "caffeine" # nix version is not M1 compatibile
       "ilok-license-manager" # no nix version
       "scroll-reverser" # no nix version
+      "midi-monitor" # to sniff midi messsages
+      "arduino-ide" # to edit arduino
     ];
     brews = [
       "pyenv" # having problems with the nix version and tk
