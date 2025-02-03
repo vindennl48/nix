@@ -55,6 +55,8 @@
       "scroll-reverser" # no nix version
       "midi-monitor" # to sniff midi messsages
       "arduino-ide" # to edit arduino
+      "vlc"
+      "visual-studio-code"
     ];
     brews = [
       "pyenv" # having problems with the nix version and tk
