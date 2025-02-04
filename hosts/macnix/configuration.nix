@@ -57,6 +57,7 @@
       "arduino-ide" # to edit arduino
       "vlc"
       "visual-studio-code"
+      "displaylink"
     ];
     brews = [
       "pyenv" # having problems with the nix version and tk
