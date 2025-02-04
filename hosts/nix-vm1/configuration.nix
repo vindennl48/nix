@@ -11,14 +11,15 @@
       # ./../../modules/audio.nix
       ./../../modules/basic-config.nix
       ./../../modules/boot-dos.nix
-      ./../../modules/cinnamon-environment.nix
+      # ./../../modules/cinnamon-environment.nix
       # ./../../dwm-environment.nix
-      # ./../../modules/networkManager.nix
-      # ./../../modules/openssh.nix
-      # ./../../modules/plasma-environment.nix
+      # ./../../modules/networkManager.nix # dont need with cinnamon
+      ./../../modules/openssh.nix
+      ./../../modules/plasma-environment.nix
       ./../../modules/remoteDesktop.nix
       ./../../modules/user-mitch.nix
       # ./../../modules/user-nixhyper.nix
+      ./../../modules/nvidia.nix
     ];
 
   ## HOST NAME ##

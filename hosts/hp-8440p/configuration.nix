@@ -19,16 +19,7 @@
       # ./../../modules/remoteDesktop.nix
       ./../../modules/user-mitch.nix
       # ./../../modules/user-nixhyper.nix
-
-      ./hardware-configuration.nix
-      ./../../modules/audio.nix
-      ./../../modules/basic-config.nix
-      ./../../modules/boot-dos.nix
-      ./../../modules/cinnamon-environment.nix
-      # ./../../dwm-environment.nix
-      # ./../../modules/networkManager.nix
-      # ./../../modules/plasma-environment.nix
-      # ./../../modules/remoteDesktop.nix
+      # ./../../modules/nvidia.nix
     ];
 
   ## HOST NAME ##
