@@ -9,6 +9,13 @@
   # Load nvidia driver for Xorg and Wayland
   services.xserver.videoDrivers = ["nvidia"];
 
+  # OpenGL and hardware acceleration
+  hardware.opengl = {
+    enable = true;
+    driSupport = true;
+    driSupport32Bit = true; # Required for 32-bit applications (e.g., Steam games)
+  };
+
   hardware.nvidia = {
 
     # Modesetting is required.
