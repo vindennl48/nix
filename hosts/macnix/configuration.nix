@@ -62,6 +62,7 @@
     brews = [
       "pyenv" # having problems with the nix version and tk
       "python-tk@3.12" # no version for nix
+      "switchaudio-osx" # switch audio sources for LOF
     ];
     masApps = {
       # dont care if these auto-update
